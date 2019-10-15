@@ -12,6 +12,7 @@ import {
   DropdownItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import logo from 'assets/img/logo.png';
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState();
@@ -23,7 +24,9 @@ export const Navigation = () => {
   return (
     <Navbar className="nav" color="light" fixed="true" light expand="md">
       <div className="container">
-        <NavbarBrand href="/">Logo</NavbarBrand>
+        <NavbarBrand href="/">
+          <img src={logo} className="logo img-fluid" alt="omnibiz" />
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -35,7 +38,7 @@ export const Navigation = () => {
 
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                Dropdown
+                Solutions
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>Dropdown1</DropdownItem>
@@ -46,7 +49,7 @@ export const Navigation = () => {
 
             <NavItem>
               <NavLink className="nav-link" to="/page">
-                Page
+                Partners
               </NavLink>
             </NavItem>
           </Nav>

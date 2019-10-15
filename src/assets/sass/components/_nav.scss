@@ -1,4 +1,10 @@
 .nav {
+  .navbar {
+    &-brand {
+      max-width: 100px;
+    }
+  }
+
   &-item {
     margin: 0 0.8rem;
 
