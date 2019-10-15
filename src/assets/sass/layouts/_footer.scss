@@ -1,16 +1,92 @@
 .footer {
-  padding: 1rem;
-  background: color(light-grey);
+  @include respond(small) {
+    text-align: center;
+  }
+  padding: 5rem 0 3rem;
+  background: color(dark-blue);
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
 
   .copyright {
     @include font-size(small);
+    text-align: center;
+  }
 
-    &__link {
-      color: color(black);
+  &__heading {
+    @include font-size(small);
+    @include font-weight(bold);
+    text-transform: uppercase;
+    color: color(white);
+  }
+
+  &__list {
+    @include respond(small) {
+      @include font-size(small);
+    }
+
+    @include font-size(x-small);
+    list-style: none;
+    line-height: 1.5;
+  }
+
+  &__logo {
+    @include respond(small) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    margin-bottom: 3rem;
+    max-width: 180px;
+  }
+
+  &__item {
+    margin: 0.8rem 0;
+  }
+
+  &__link {
+    color: rgba($color: #fff, $alpha: 0.7);
+    transition: color 0.6s ease;
+
+    &:hover {
+      color: color(primary);
+    }
+
+    &--none {
+      transition: none;
+
+      &:hover {
+        color: rgba($color: #fff, $alpha: 0.7);
+      }
     }
   }
 
-  &__title {
-    color: color(dark);
+  &-socials {
+    @include respond(small) {
+      justify-content: center;
+    }
+    display: flex;
+
+    .social {
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        border-radius: 50%;
+        color: rgba($color: color(white), $alpha: 0.5);
+        transition-duration: 0.5s;
+        transition-property: background-color, color;
+        transition-timing-function: linear;
+
+        &:hover {
+          background-color: color(dark);
+          color: color(primary);
+        }
+      }
+    }
   }
 }
