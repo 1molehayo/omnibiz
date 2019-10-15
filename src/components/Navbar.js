@@ -22,14 +22,14 @@ export const Navigation = () => {
   };
 
   return (
-    <Navbar className="nav" color="light" fixed="true" light expand="md">
+    <Navbar className="nav" color="light" fixed="true" light expand="lg">
       <div className="container">
         <NavbarBrand href="/">
           <img src={logo} className="logo img-fluid" alt="omnibiz" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav navbar>
             <NavItem>
               <NavLink className="nav-link" exact to="/">
                 Home
@@ -40,16 +40,53 @@ export const Navigation = () => {
               <DropdownToggle nav caret>
                 Solutions
               </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Dropdown1</DropdownItem>
-                <DropdownItem>Dropdown2</DropdownItem>
-                <DropdownItem>Dropdown3</DropdownItem>
+              <DropdownMenu>
+                <DropdownItem>
+                  <NavLink className="nav-link" to="/business">
+                    Business website
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink className="nav-link" to="/business">
+                    Online store
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink className="nav-link" to="/business">
+                    Business listing
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLink className="nav-link" to="/business">
+                    Business scan
+                  </NavLink>
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
 
             <NavItem>
               <NavLink className="nav-link" to="/page">
-                Partners
+                Reach and Partners
+              </NavLink>
+            </NavItem>
+          </Nav>
+
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <NavLink className="nav-link" to="/request">
+                Request for demo
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className="nav-link" to="/login">
+                Login
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink className="nav-link signup" to="/signup">
+                Get Started
               </NavLink>
             </NavItem>
           </Nav>

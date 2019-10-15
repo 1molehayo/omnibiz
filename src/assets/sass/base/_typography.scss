@@ -1,20 +1,22 @@
 .heading {
-  @media only screen and (max-width: 37.5em) {
-    font-size: 1.125rem;
+  @include respond(small) {
+    @include font-size(medium);
   }
+  @include font-size(large);
+  @include font-weight(bold);
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #000;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  color: color(dark);
 }
 
 .paragraph {
-  @media only screen and (max-width: 37.5em) {
-    font-size: 0.875rem;
+  @include respond(small) {
+    @include font-size(small);
   }
+  @include font-size(regular);
+  @include font-weight(regular);
   line-height: 1.8;
-  letter-spacing: 0.2px;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #7a7a7a;
+  letter-spacing: normal;
+  color: color(grey);
 }

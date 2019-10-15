@@ -7,14 +7,20 @@
 @import 'base/resets';
 @import 'base/typography';
 @import 'base/base';
+@import 'base/fonts';
 
 // vendors
 @import 'vendors/bootstrap';
+@import 'vendors/icomoon';
 
 // components
 @import 'components/buttons';
+@import 'components/card';
+@import 'components/modal';
 @import 'components/nav';
+@import 'components/plan-card';
 @import 'components/tabs';
+@import 'components/video-modal';
 
 // layout
 @import 'layouts/footer';

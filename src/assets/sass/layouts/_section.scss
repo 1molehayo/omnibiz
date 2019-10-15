@@ -1,3 +1,20 @@
 .section {
   padding: 3rem 0;
+
+  &__header {
+    position: relative;
+    padding-top: 1rem;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-radius: 4px;
+      width: 40px;
+      height: 8px;
+      background-color: color(primary);
+      transform: translateX(-50%);
+      content: '';
+    }
+  }
 }
