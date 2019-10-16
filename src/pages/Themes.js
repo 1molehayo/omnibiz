@@ -84,7 +84,7 @@ const Themes = () => {
                           onChange={e => setPriceRange(e.target.value)}
                           placeholder="all"
                         >
-                          <option value="" selected>
+                          <option value="" selected defaultValue>
                             all
                           </option>
                           {categories.map((rangeItem, y) => (

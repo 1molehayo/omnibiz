@@ -1,0 +1,65 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding: 1.25rem;
+  background-color: color(white);
+
+  &__body {
+    @include font-size(small);
+    @include font-weight(regular);
+    margin-bottom: 1.25rem;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 0 1rem;
+    text-align: center;
+    line-height: 1.2;
+    color: color(dark);
+  }
+
+  &__details {
+    @include font-size(regular);
+    @include font-weight(regular);
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__image {
+    margin-right: 1rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__job {
+    @include font-size(x-small);
+    color: color(grey);
+  }
+
+  &__name {
+    line-height: 1.4;
+    color: color(dark);
+  }
+
+  &__message {
+    margin-bottom: 1.25rem;
+    letter-spacing: 1.5px;
+  }
+
+  &s {
+    background-color: color(light-blue);
+
+    .slick-slider {
+      left: 50%;
+      width: 120vw;
+      transform: translateX(-50%);
+    }
+  }
+}

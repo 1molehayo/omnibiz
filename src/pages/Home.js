@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
 import { PageLayout } from 'layouts/PageContainer';
 import { Link } from 'react-router-dom';
-import { VideoModal, PlanCard } from 'components';
+import { VideoModal, PlanCard, Testimonials } from 'components';
 import { IMAGES } from 'utility/images';
 import { ReactComponent as Playbtn } from 'assets/img/svg/playbtn.svg';
+import { ReactComponent as Domain } from 'assets/img/svg/domain.svg';
+import { ReactComponent as OnlineShopping } from 'assets/img/svg/online-shopping.svg';
+import { ReactComponent as Responsive } from 'assets/img/svg/responsive.svg';
+import { ReactComponent as Seo } from 'assets/img/svg/seo.svg';
 import { SectionHeader } from 'layouts/SectionHeader';
 import DATA from 'utility/staticdata';
 import bars from 'assets/img/svg/bars.svg';
+
 import ThemeCard from 'components/ThemeCard';
+import { CallToAction } from 'components/CallToAction';
 
 const Home = () => {
   const [videoModal, setVideoModal] = useState(false);
@@ -150,6 +156,82 @@ const Home = () => {
             </div>
           </div>
         </section>
+
+        <Testimonials testimonials={DATA.testimonials} />
+
+        <section className="section features">
+          <div className="container">
+            <SectionHeader
+              title={`Top /bold Features /bold`}
+              desc={`Lorem ipsum dolor sit amet, consectetur /n adipiscing elit,
+              sed do eiusmod tempor incididunt`}
+            />
+
+            <div className="row">
+              <div className="col-md-6 mb-5">
+                <div className="feature">
+                  <div>
+                    <Responsive className="feature__icon" />
+                  </div>
+                  <div className="feature__details">
+                    <h5 className="feature__title">Device Friendly</h5>
+                    <p className="paragraph">
+                      Phone or laptops, your website always looks great and can
+                      be updated on the go
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-6 mb-5">
+                <div className="feature">
+                  <div>
+                    <Seo className="feature__icon" />
+                  </div>
+                  <div className="feature__details">
+                    <h5 className="feature__title">SEO Friendly</h5>
+                    <p className="paragraph">
+                      Get more visitors and hence more sales with the Search
+                      engine optimized site
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-6 mb-5">
+                <div className="feature">
+                  <div>
+                    <Domain className="feature__icon" />
+                  </div>
+                  <div className="feature__details">
+                    <h5 className="feature__title">Free Domain</h5>
+                    <p className="paragraph">
+                      Get a custom domain that reflects your business or brand
+                      for free with the site
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-6 mb-5">
+                <div className="feature">
+                  <div>
+                    <OnlineShopping className="feature__icon" />
+                  </div>
+                  <div className="feature__details">
+                    <h5 className="feature__title">Online Store</h5>
+                    <p className="paragraph">
+                      Get sales orders or inquiries on your products of services
+                      on your phone
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <CallToAction />
 
         <VideoModal
           toggleVideo={toggleVideo}

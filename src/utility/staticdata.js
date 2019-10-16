@@ -6,24 +6,38 @@ const DATA = {
     { price: '199', name: 'business' },
     { price: '299', name: 'enterprise' }
   ],
-  testimony: [
+  testimonials: [
     {
       author: 'Dante Lex',
-      desc:
+      message:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.',
       image: IMAGES.testimony.dante,
       job: 'UI/UX Designer'
     },
     {
       author: 'Dante Lex',
-      desc:
+      message:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.',
       image: IMAGES.testimony.dante,
       job: 'UI/UX Designer'
     },
     {
       author: 'Dante Lex',
-      desc:
+      message:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.',
+      image: IMAGES.testimony.dante,
+      job: 'UI/UX Designer'
+    },
+    {
+      author: 'Dante Lex',
+      message:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.',
+      image: IMAGES.testimony.dante,
+      job: 'UI/UX Designer'
+    },
+    {
+      author: 'Dante Lex',
+      message:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut aliquip ex ea commodo consequat.',
       image: IMAGES.testimony.dante,
       job: 'UI/UX Designer'

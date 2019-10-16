@@ -1,0 +1,34 @@
+.call-to-action {
+  background: color(light-blue);
+
+  &__col {
+    @include respond(small) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    margin: 0 1.5rem;
+    width: auto;
+  }
+
+  .heading {
+    @include font-weight(regular);
+    margin-bottom: 0;
+    text-transform: unset;
+    line-height: 1.5;
+    font-size: 24px;
+  }
+
+  .paragraph {
+    @include font-size(medium);
+    margin-bottom: 0;
+  }
+
+  &__row {
+    @include respond(small) {
+      display: block;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
