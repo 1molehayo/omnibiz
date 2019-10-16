@@ -17,8 +17,11 @@
   }
 
   .copyright {
+    @include respond(small) {
+      text-align: left;
+    }
     @include font-size(small);
-    text-align: left;
+    text-align: center;
   }
 
   &__heading {
