@@ -1,0 +1,28 @@
+.themes {
+  &--bg {
+    @include respond(medium) {
+      top: 0;
+    }
+
+    @include respond(small) {
+      height: 200px;
+      object-fit: cover;
+      object-position: center;
+    }
+    position: absolute;
+    top: -28%;
+    left: 50%;
+    max-width: 100%;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
+  &__header {
+    @include respond(medium) {
+      padding-bottom: 0;
+    }
+    z-index: 2;
+    position: relative;
+    padding: 5rem 0;
+  }
+}

@@ -5,7 +5,7 @@ import { Loader } from './components';
 import history from './history';
 
 const Home = lazy(() => import('pages/Home'));
-const Page = lazy(() => import('pages/Page'));
+const Themes = lazy(() => import('pages/Themes'));
 
 const Scroll = props => {
   React.useEffect(() => {
@@ -41,10 +41,10 @@ const RouterComponent = () => (
 
         <Route
           exact
-          path="/page"
+          path="/themes"
           render={routeProps => (
             <Suspense fallback={<Loader show />}>
-              <Page {...routeProps} />
+              <Themes {...routeProps} />
             </Suspense>
           )}
         />

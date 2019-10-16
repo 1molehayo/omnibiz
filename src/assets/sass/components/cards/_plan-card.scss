@@ -49,20 +49,6 @@
     list-style: none;
   }
 
-  &__text {
-    margin-bottom: 0;
-
-    &--big {
-      @include font-size(x-large);
-      @include font-weight(bold);
-      color: color(primary);
-    }
-
-    &--small {
-      @include font-size(small);
-    }
-  }
-
   &__title {
     @include font-size(small);
     margin-bottom: 0;

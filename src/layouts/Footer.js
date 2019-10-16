@@ -22,6 +22,15 @@ export const Footer = () => (
                   </a>
                 </li>
               </ul>
+
+              <h5 className="footer__heading">News and Events</h5>
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <Link to="/" className="footer__link">
+                    Design-a-thon
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

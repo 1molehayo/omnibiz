@@ -1,11 +1,15 @@
 .footer {
   @include respond(small) {
-    text-align: center;
+    text-align: left;
   }
   padding: 5rem 0 3rem;
   background: color(dark-blue);
 
   &-col {
+    @include respond(small) {
+      align-items: flex-start;
+    }
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +18,7 @@
 
   .copyright {
     @include font-size(small);
-    text-align: center;
+    text-align: left;
   }
 
   &__heading {

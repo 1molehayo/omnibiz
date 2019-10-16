@@ -15,10 +15,12 @@
 
 // components
 @import 'components/buttons';
-@import 'components/card';
+@import 'components/cards/card';
+@import 'components/cards/plan-card';
+@import 'components/cards/theme-card';
+@import 'components/forms';
 @import 'components/modal';
 @import 'components/nav';
-@import 'components/plan-card';
 @import 'components/tabs';
 @import 'components/video-modal';
 
@@ -30,7 +32,7 @@
 
 // pages
 @import 'pages/home';
-@import 'pages/page';
+@import 'pages/themes';
 
 // themes
 @import 'themes/default';

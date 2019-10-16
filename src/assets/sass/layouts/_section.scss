@@ -1,8 +1,10 @@
 .section {
+  position: relative;
   padding: 3rem 0;
 
   &__header {
     position: relative;
+    margin-bottom: 3rem;
     padding-top: 1rem;
 
     &::after {
@@ -15,6 +17,12 @@
       background-color: color(primary);
       transform: translateX(-50%);
       content: '';
+    }
+
+    .heading {
+      @include font-weight(regular);
+      margin-bottom: 1rem;
+      font-size: 25px;
     }
   }
 }

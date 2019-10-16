@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { PageLayout } from 'layouts/PageContainer';
 import { Link } from 'react-router-dom';
-import { VideoModal } from 'components';
+import { VideoModal, PlanCard } from 'components';
 import { IMAGES } from 'utility/images';
-import bars from 'assets/img/svg/bars.svg';
 import { ReactComponent as Playbtn } from 'assets/img/svg/playbtn.svg';
+import { SectionHeader } from 'layouts/SectionHeader';
+import DATA from 'utility/staticdata';
+import bars from 'assets/img/svg/bars.svg';
+import ThemeCard from 'components/ThemeCard';
 
 const Home = () => {
   const [videoModal, setVideoModal] = useState(false);
@@ -27,6 +30,18 @@ const Home = () => {
     ));
   };
 
+  const generatePlanCards = () => {
+    return DATA.plans.map((plan, index) => (
+      <PlanCard key={index} plan={plan} />
+    ));
+  };
+
+  const generateThemeCards = () => {
+    return DATA.themes
+      .slice(0, 3)
+      .map((theme, index) => <ThemeCard key={index} theme={theme} />);
+  };
+
   return (
     <PageLayout pageClass="home">
       <>
@@ -34,10 +49,10 @@ const Home = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-7 col-lg-7 col-xl-6">
-                <h3 className="heading">
+                <h3 className="heading page__heading">
                   Get your business <br /> website up and running
                 </h3>
-                <p className="paragraph">
+                <p className="paragraph page__desc">
                   Stop wasting time and money designing and managing a website
                   that doesn’t get results.
                   <br /> Happiness guaranteed!
@@ -74,121 +89,23 @@ const Home = () => {
 
         <section className="section section__plans">
           <div className="container">
-            <div className="section__header text-center">
-              <h3 className="heading">
-                Find the <span className="font-bold">right plan</span> for you
-              </h3>
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit,
-                sed do eiusmod tempor incididunt
-              </p>
-            </div>
+            <SectionHeader
+              title={`Find the /bold right plan /bold for you`}
+              desc={`Lorem ipsum dolor sit amet, consectetur /n adipiscing elit,
+              sed do eiusmod tempor incididunt`}
+            />
 
-            <div className="row mt-5">
-              <div className="col-md-4">
-                <div className="card plan-card">
-                  <div className="plan-card__header">
-                    <p className="plan-card__title">INDIVIDUAL</p>
-                  </div>
-
-                  <div className="mb-4 text-center">
-                    <p className="plan-card__text plan-card__text--small">
-                      Starting From
-                    </p>
-                    <p className="plan-card__text plan-card__text--big">$59</p>
-                    <p className="plan-card__text plan-card__text--small">
-                      month
-                    </p>
-                  </div>
-
-                  <ul className="plan-card__list">
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                  </ul>
-
-                  <a href="/" className="button button--primary">
-                    GET STARTED
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="card plan-card">
-                  <div className="plan-card__header">
-                    <p className="plan-card__title">BUSINESS</p>
-                  </div>
-
-                  <div className="mb-4 text-center">
-                    <p className="plan-card__text plan-card__text--small">
-                      Starting From
-                    </p>
-                    <p className="plan-card__text plan-card__text--big">$199</p>
-                    <p className="plan-card__text plan-card__text--small">
-                      month
-                    </p>
-                  </div>
-
-                  <ul className="plan-card__list">
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                  </ul>
-
-                  <a href="/" className="button button--primary">
-                    GET STARTED
-                  </a>
-                </div>
-              </div>
-
-              <div className="col-md-4">
-                <div className="card plan-card">
-                  <div className="plan-card__header">
-                    <p className="plan-card__title">ENTERPRISE</p>
-                  </div>
-
-                  <div className="mb-4 text-center">
-                    <p className="plan-card__text plan-card__text--small">
-                      Starting From
-                    </p>
-                    <p className="plan-card__text plan-card__text--big">$299</p>
-                    <p className="plan-card__text plan-card__text--small">
-                      month
-                    </p>
-                  </div>
-
-                  <ul className="plan-card__list">
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                    <li className="plan-card__item">Website Development</li>
-                  </ul>
-
-                  <a href="/" className="button button--primary">
-                    GET STARTED
-                  </a>
-                </div>
-              </div>
-            </div>
+            <div className="row">{generatePlanCards()}</div>
           </div>
         </section>
 
         <section className="section section__stories">
           <div className="container">
-            <div className="section__header text-center">
-              <h3 className="heading">
-                Learn how to{' '}
-                <span className="font-bold">improve your website</span> look,
-                <br />
-                design, process and content
-              </h3>
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit,
-                sed do eiusmod tempor incididunt
-              </p>
-            </div>
+            <SectionHeader
+              title={`Learn how to /bold improve your website /bold look, /n design, process and content`}
+              desc={`Lorem ipsum dolor sit amet, consectetur /n adipiscing elit,
+              sed do eiusmod tempor incididunt`}
+            />
 
             <div className="stories">
               <div className="stories__video">
@@ -212,6 +129,24 @@ const Home = () => {
                   <span className="icon-right-arrow"></span>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section__themes">
+          <div className="container">
+            <SectionHeader
+              title={`Top /bold Themes /bold`}
+              desc={`Lorem ipsum dolor sit amet, consectetur /n adipiscing elit,
+              sed do eiusmod tempor incididunt`}
+            />
+
+            <div className="row">{generateThemeCards()}</div>
+
+            <div className="text-center">
+              <Link to="/themes" className="button button--secondary">
+                view more
+              </Link>
             </div>
           </div>
         </section>

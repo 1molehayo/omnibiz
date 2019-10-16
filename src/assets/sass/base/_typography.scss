@@ -5,6 +5,7 @@
   @include font-size(large);
   @include font-weight(bold);
   margin-bottom: 1.5rem;
+  text-transform: capitalize;
   line-height: 1.2;
   letter-spacing: 1.5px;
   color: color(dark);

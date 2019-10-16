@@ -5,15 +5,6 @@
   padding-top: 2rem;
 
   .section__intro {
-    .heading {
-      @include respond(medium) {
-        @include font-size(m-large);
-      }
-
-      @include font-size(x-large);
-      letter-spacing: 3px;
-    }
-
     .intro-icon {
       @include respond(small) {
         margin-bottom: 2rem;
@@ -22,20 +13,6 @@
       }
       margin-left: auto;
       max-width: 250px;
-    }
-
-    .paragraph {
-      @include respond(large) {
-        margin-right: 0;
-      }
-
-      @include respond(medium) {
-        @include font-size(medium);
-      }
-
-      @include font-size(large);
-      margin-right: 1rem;
-      margin-bottom: 1.5rem;
     }
 
     .row {
@@ -94,12 +71,6 @@
   }
 
   .section__plans {
-    .heading {
-      @include font-weight(regular);
-      margin-bottom: 1rem;
-      font-size: 25px;
-    }
-
     .row {
       div:nth-child(even) {
         .plan-card {
@@ -132,6 +103,7 @@
         top: 10%;
         right: 0;
         width: 70px;
+        cursor: pointer;
         transform: translateX(50%);
       }
 
