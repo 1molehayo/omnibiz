@@ -12,6 +12,11 @@ const ThemeCard = props => (
           alt={props.theme.name}
           className="theme-card__image"
         />
+
+        <div className="card__overlay">
+          <button className="button button--primary">Add Website</button>
+          <button className="button button--link">Preview Theme</button>
+        </div>
       </div>
       <div className="theme-card__details">
         <div>

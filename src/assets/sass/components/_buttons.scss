@@ -30,6 +30,15 @@ button {
     opacity: 0.3;
   }
 
+  &--link {
+    background-color: transparent;
+    color: color(primary);
+
+    &:hover {
+      color: color(red);
+    }
+  }
+
   &--primary {
     background-color: color(primary);
     color: color(white);

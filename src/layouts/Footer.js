@@ -117,29 +117,35 @@ export const Footer = () => (
 
         <div className="col-md-3">
           <div className="footer-col">
-            <h5 className="footer__heading">Follow Us</h5>
-            <ul className="footer__list">
-              <li className="footer__item">
-                <Link to="/" className="footer__link">
-                  Facebook
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/" className="footer__link">
-                  Twitter
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/" className="footer__link">
-                  LinkeIn
-                </Link>
-              </li>
-              <li className="footer__item">
-                <Link to="/" className="footer__link">
-                  Youtube
-                </Link>
-              </li>
-            </ul>
+            <div>
+              <h5 className="footer__heading">Follow Us</h5>
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <Link to="/" className="footer__link">
+                    <span className="icon-facebook-logo mr-2"></span>
+                    Facebook
+                  </Link>
+                </li>
+                <li className="footer__item">
+                  <Link to="/" className="footer__link">
+                    <span className="icon-twitter mr-2"></span>
+                    Twitter
+                  </Link>
+                </li>
+                <li className="footer__item">
+                  <Link to="/" className="footer__link">
+                    <span className="icon-linkedin mr-2"></span>
+                    LinkedIn
+                  </Link>
+                </li>
+                <li className="footer__item">
+                  <Link to="/" className="footer__link">
+                    <span className="icon-youtube mr-2"></span>
+                    Youtube
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
