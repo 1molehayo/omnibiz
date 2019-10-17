@@ -31,33 +31,46 @@ export const Navigation = () => {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink className="nav-link" exact to="/">
+              <NavLink
+                className="nav-link"
+                exact
+                to="https://www.omnibiz.com/index.html"
+              >
                 Home
               </NavLink>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
-              <DropdownToggle nav caret>
+              <DropdownToggle nav caret className="active">
                 Solutions
               </DropdownToggle>
               <DropdownMenu>
                 <DropdownItem>
-                  <NavLink className="nav-link" to="/business">
+                  <NavLink className="nav-link" to="/">
                     Business website
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink className="nav-link" to="/business">
+                  <NavLink
+                    className="nav-link"
+                    to="https://www.omnibiz.com/online-store.html"
+                  >
                     Online store
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink className="nav-link" to="/business">
+                  <NavLink
+                    className="nav-link"
+                    to="https://www.omnibiz.com/business-listing.html"
+                  >
                     Business listing
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLink className="nav-link" to="/business">
+                  <NavLink
+                    className="nav-link"
+                    to="https://www.omnibiz.com/business-scan.html"
+                  >
                     Business scan
                   </NavLink>
                 </DropdownItem>
@@ -65,7 +78,10 @@ export const Navigation = () => {
             </UncontrolledDropdown>
 
             <NavItem>
-              <NavLink className="nav-link" to="/page">
+              <NavLink
+                className="nav-link"
+                to="https://www.omnibiz.com/reachandpartners.html"
+              >
                 Reach and Partners
               </NavLink>
             </NavItem>
@@ -85,7 +101,10 @@ export const Navigation = () => {
             </NavItem>
 
             <NavItem>
-              <NavLink className="nav-link signup" to="/signup">
+              <NavLink
+                className="nav-link signup"
+                to="https://omnibiz.com/registerbusiness/"
+              >
                 Get Started
               </NavLink>
             </NavItem>

@@ -20,9 +20,11 @@
   &__heading {
     @include respond(medium) {
       @include font-size(m-large);
+      @include font-weight(bold);
     }
 
     @include font-size(x-large);
+    @include font-weight(regular);
     letter-spacing: 3px;
   }
 }

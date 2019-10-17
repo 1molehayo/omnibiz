@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export const Footer = () => (
   <footer className="footer">
@@ -26,9 +25,12 @@ export const Footer = () => (
               <h5 className="footer__heading">News and Events</h5>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://thenest.ng/designathon"
+                    className="footer__link"
+                  >
                     Design-a-thon
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -41,29 +43,44 @@ export const Footer = () => (
               <h5 className="footer__heading">Useful Links</h5>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/index.html"
+                    className="footer__link"
+                  >
                     About us
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/privacypolicy.html"
+                    className="footer__link"
+                  >
                     Privacy Policy
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://market.omnibiz.com/"
+                    className="footer__link"
+                  >
                     Omnibiz Market
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/reachandpartners.html"
+                    className="footer__link"
+                  >
                     Reach and Partners
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/termsandconditions.html"
+                    className="footer__link"
+                  >
                     Terms & Conditions
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -76,39 +93,57 @@ export const Footer = () => (
               <h5 className="footer__heading">Resources</h5>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/business-website.html"
+                    className="footer__link"
+                  >
                     Create a website
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://omnibiz.com/registerbusiness/"
+                    className="footer__link"
+                  >
                     Register Your Business
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/online-store.html"
+                    className="footer__link"
+                  >
                     Sell Online
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/business-listing.html"
+                    className="footer__link"
+                  >
                     Business Listing
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/business-scan.html"
+                    className="footer__link"
+                  >
                     Business Scan
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.omnibiz.com/google-my-business-listing.html"
+                    className="footer__link"
+                  >
                     Google My Business
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a href="https://blog.omnibiz.com/" className="footer__link">
                     Blog
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -121,28 +156,40 @@ export const Footer = () => (
               <h5 className="footer__heading">Follow Us</h5>
               <ul className="footer__list">
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.facebook.com/pages/category/Product-Service/Omnibiz-Africa-502665823597619/"
+                    className="footer__link"
+                  >
                     <span className="icon-facebook-logo mr-2"></span>
                     Facebook
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://twitter.com/omnibizafrica"
+                    className="footer__link"
+                  >
                     <span className="icon-twitter mr-2"></span>
                     Twitter
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.linkedin.com/company/omnibiz-africa/?originalSubdomain=ng"
+                    className="footer__link"
+                  >
                     <span className="icon-linkedin mr-2"></span>
                     LinkedIn
-                  </Link>
+                  </a>
                 </li>
                 <li className="footer__item">
-                  <Link to="/" className="footer__link">
+                  <a
+                    href="https://www.youtube.com/channel/UCS2MwkXbUr9YRV8GND394kw"
+                    className="footer__link"
+                  >
                     <span className="icon-youtube mr-2"></span>
                     Youtube
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
